@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity 1</title>
+</head>
+<body>
+   <h1>Array sorting in js</h1> 
+   <button onclick="ascending()">Ascending</button>
+<button onclick="descending()">descending</button>
+<p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<script>
+    var num=[2,4,8,6,10,12,18]
+    function ascending(){
+        num.sort(function(a,b){return a-b});
+        document.getElementById("p2").innerHTML=num;
+    }
+    function descending() {
+            num.sort(function (a, b) { return b - a });
+            document.getElementById("p3").innerHTML = num;
+    }
+</script>
+</body>
+</html>
