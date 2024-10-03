@@ -7,6 +7,23 @@
     </title>
 </head>
 <body>
-   <h1></h1> 
+   <h1>Eval in js</h1> 
+   <p id="p1"></p>
+<p id="p2"></p>
+<p id="p3"></p>
+<p id="p4"></p>
+<script>
+    var x=10;
+    var b=2;
+    var c=2;
+    var sum=x+b;
+    var diff=x-b;
+    var quo=x/2;
+    var prod=b*c;
+    document.getElementById("p1").innerHTML=eval(sum);
+    document.getElementById("p2").innerHTML = eval(diff);
+    document.getElementById("p3").innerHTML = eval(quo);
+    document.getElementById("p4").innerHTML = eval(prod);
+</script>
 </body>
 </html>
